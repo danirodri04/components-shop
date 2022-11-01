@@ -18,14 +18,16 @@ const ItemCount = () => {
           setContador(contador - 1)
         }
     }
-  
+    
     return (
       <>
-      <div>
-          <button className = 'button btn btn-outline-success' onClick={() => Increment()}>+</button> <span className = "contador">{contador}</span>
-          <button className = 'button btn btn-outline-danger' onClick={() => Decrement()}>-</button> 
+      <div className='container-fluid'>
+          <button className = 'button btn btn-outline-success btn-lg' onClick={() => Increment()}>+</button>
+            <span className = "contador fs-4">{contador}</span>
+          <button className = 'button btn btn-outline-danger btn-lg' onClick={() => Decrement()}>-</button> 
           <button className = 'button btn btn-outline-primary'>ADD TO CART</button>
       </div>
+          
       </>
     )
   
