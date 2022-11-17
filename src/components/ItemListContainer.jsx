@@ -33,7 +33,8 @@ useEffect(() => {
         title = {item.title}
         description = {item.description}
         price = {item.price}
-        pictureUrl = {item.pictureUrl} />
+        pictureUrl = {item.pictureUrl}
+        stock = {item.stock} />
       ))
     }
        <Item />

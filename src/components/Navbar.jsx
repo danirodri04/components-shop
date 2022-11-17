@@ -13,13 +13,13 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                    <a className="nav-link active text-white" aria-current="page" href="#">CATEGORIA 1</a>
+                    <a className="nav-link active text-white" aria-current="page" href="#">Motherboard</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link text-white" href="#">CATEGORIA 2</a>
+                    <a className="nav-link text-white" href="#">Placa de Video</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link text-white" href="#">CATEGORIA 3</a>
+                    <a className="nav-link text-white" href="#">Memoria RAM</a>
                     </li>
                 </ul>
         <CartWidget />

@@ -11,8 +11,8 @@ const App = () => {
   return (
     <> 
       <Navbar />
-      <ItemListContainer msg = "Hola mundo ItemListContainer!!!" />
-      <ItemCount />
+      <ItemListContainer />
+      {/* <ItemCount /> */}
       
     </>
   )
