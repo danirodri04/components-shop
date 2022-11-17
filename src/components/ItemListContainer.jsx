@@ -37,7 +37,7 @@ const getItems = () => {
   return (
     <>
    <div className='list-container'>
-        <ItemList datos={Item} />
+        <ItemList datos={datos} />
    </div>
        
         </>
