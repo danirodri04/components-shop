@@ -14,26 +14,31 @@ const ItemListContainer = () => {
 const [datos, setDatos] = useState([])
 
 useEffect(() => {
-  customFetch(2000, data)
-    .then(response => setDatos(response))
-    .catch(err => console.log(err)) 
-
+  getData();
 }, [])
+
+const getData = async () => {
+  try {
+    const resp = await getItems()
+    setDatos(resp)
+  } catch (err){
+    console.log(err)
+  }
+}
+
+const getItems = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(data);
+    }, 2000)
+  })
+}
 
   return (
     <>
-    {
-      datos.map(item => (
-        <ItemList 
-        key ={item.id}
-        title = {item.title}
-        description = {item.description}
-        price = {item.price}
-        pictureUrl = {item.pictureUrl}
-        stock = {item.stock} />
-      ))
-    }
-       <Item />
+   <div className='list-container'>
+        <ItemList datos={Item} />
+   </div>
        
         </>
         )
