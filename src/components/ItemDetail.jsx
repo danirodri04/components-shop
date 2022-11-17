@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ItemDetail = () => {
+const ItemDetail = ({id, title, description, price, pictureUrl, stock}) => {
+
   return (
     <>
-   
-    
+        
     </>
   )
 }
