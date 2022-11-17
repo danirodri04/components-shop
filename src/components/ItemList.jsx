@@ -23,7 +23,7 @@ const ItemList = () => {
     </div>
 
     <div className="d-flex justify-content-evenly mt-5">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_819249-MLA48734632355_012022-O.webp" className="img-thumbnail" width="550px"></img>
+      <img src="https://http2.mlstatic.com/D_NQ_NP_819249-MLA48734632355_012022-O.webp" className="img-thumbnail" width="500px"></img>
     </div>
     </>
   )

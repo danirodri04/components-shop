@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { customFetch } from '../utils/customFetch'
-import { data } from '../utils/data'
+import { customFetch } from './utils/customFetch'
+import { data } from './utils/data'
 import ItemList from '../components/ItemList'
 import Item from '../components/Item'
 import ItemDetail from '../components/ItemDetail'
@@ -11,10 +11,7 @@ import ItemDetail from '../components/ItemDetail'
 
 
 const ItemListContainer = () => {
-
 const [datos, setDatos] = useState([])
-
-
 
 useEffect(() => {
   customFetch(2000, data)
@@ -23,13 +20,12 @@ useEffect(() => {
 
 }, [])
 
-
   return (
     <>
     {
       datos.map(item => (
-        <ItemDetail 
-        key={item.id}
+        <ItemList 
+        key ={item.id}
         title = {item.title}
         description = {item.description}
         price = {item.price}
@@ -38,7 +34,7 @@ useEffect(() => {
       ))
     }
        <Item />
-       <ItemList />
+       
         </>
         )
       }
