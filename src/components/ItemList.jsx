@@ -4,7 +4,7 @@ import Item from "./Item"
 const ItemList = ({datos}) => {
   return (
     <>
-      <div className ="row d-flex gap-4 justify-content-center">
+      <div className ="row gap-4">
        {datos.map((item) => (
         <Item item={item} key={item.id} />
        ))}
