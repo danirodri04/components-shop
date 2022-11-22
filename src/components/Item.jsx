@@ -6,12 +6,11 @@ const {id, title, description, price, pictureUrl, stock} = item;
   return (
     <>
       <div className=' mx-auto card col-3 text-center mt-5' >
-      <a href="#">
      <img src={pictureUrl} className="img-fluid mx-auto mt-5" width="350px"></img>
-      </a>
       <div className="cadr-body">
+        <a href="#">
       <button type="button" class="btn btn-outline-warning">Detalle</button>
-      <button type="button" class="btn btn-outline-warning">Ver Mas</button>
+        </a>
         <p className='mt-1 fs-5'>
       <br />{title} 
       <br /> {price} 

@@ -4,7 +4,8 @@ const ItemDetail = ({id, title, description, price, pictureUrl, stock}) => {
 
   return (
     <>
-        
+        {description}
+        {stock}
     </>
   )
 }
