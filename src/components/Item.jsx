@@ -10,11 +10,11 @@ const {id, title, description, price, pictureUrl, stock} = item;
      <img src={pictureUrl} className="img-fluid mx-auto mt-5" width="350px"></img>
       </a>
       <div className="cadr-body">
+      <button type="button" class="btn btn-outline-warning">Detalle</button>
+      <button type="button" class="btn btn-outline-warning">Ver Mas</button>
         <p className='mt-1 fs-5'>
       <br />{title} 
-      <br />{description} 
       <br /> {price} 
-      <br />{stock}
         </p>
       </div>
       </div> 
