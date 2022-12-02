@@ -1,16 +1,11 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { customFetch } from './utils/customFetch'
 import { data } from './utils/data'
 import ItemList from '../components/ItemList'
-import Item from '../components/Item'
-import ItemDetail from '../components/ItemDetail'
-
-
 
 
 const ItemDetailContainer = () => {
-const [datos, setDatos] = useState({})
+const [dato, setDatos] = useState({})
 
 useEffect(() => {
   getData();
@@ -28,19 +23,23 @@ const getData = async () => {
 const getItems = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(data);
+      resolve(data.find);
     }, 2000)
   })
 }
 
+const found = data.find(element => element > [4])
+
   return (
     <>
    <div className='list-container'>
-        <ItemList datos={datos} />
+        <ItemList datos={dato} />
    </div>
        
         </>
         )
       }
+
+
 
       export default ItemDetailContainer; 

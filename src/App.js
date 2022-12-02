@@ -13,8 +13,8 @@ const App = () => {
   return (
     <> 
       <Navbar />
-      <ItemDetailContainer />
-     {/*  <ItemListContainer /> */}
+      {/* <ItemDetailContainer /> */}
+       <ItemListContainer /> 
       {/* <ItemCount /> */}
       
     </>

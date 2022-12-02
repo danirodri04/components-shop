@@ -1,11 +1,15 @@
+import ItemCount from "./ItemCount"
 import React from 'react'
 
-const ItemDetail = ({id, title, description, price, pictureUrl, stock}) => {
+const ItemDetail = ({item}) => {
+
+  const onAdd = (qty) => {
+    alert("Seleccionaste " + qty + " items.");
+  }
 
   return (
     <>
-        {description}
-        {stock}
+       
     </>
   )
 }
